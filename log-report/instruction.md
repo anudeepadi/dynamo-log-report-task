@@ -9,7 +9,7 @@ report to /app/report.json as a single JSON object with exactly these keys:
 Success criteria:
 
 1. /app/report.json exists and holds a JSON object with exactly the three keys
-   "total_requests", "unique_ips", and "top_path" — no more, no fewer.
+   "total_requests", "unique_ips", and "top_path", with no additional keys.
 2. "total_requests" equals the number of non-blank lines in /app/access.log.
 3. "unique_ips" equals the number of distinct client IP addresses in /app/access.log.
 4. "top_path" equals the most-requested path in /app/access.log.

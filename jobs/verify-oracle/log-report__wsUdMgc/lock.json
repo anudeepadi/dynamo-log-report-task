@@ -3,7 +3,7 @@
     "task": {
         "name": "log-report",
         "type": "local",
-        "digest": "sha256:d4a93a250296cc3823b5b1b5b3253340a628c1b65956a7e746dbe8a72c8a0a4c",
+        "digest": "sha256:7c5402480ebb81ef1206be1b2eeb55547e947d0d810882646b7b52e414a40b0f",
         "path": "log-report"
     },
     "install_only": false,

@@ -2,10 +2,10 @@
     "task": {
         "path": "log-report"
     },
-    "trial_name": "log-report__GmAmtHt",
+    "trial_name": "log-report__Pa94B8E",
     "trials_dir": "jobs/verify-nop",
     "agent": {
         "name": "nop"
     },
-    "job_id": "f3893455-4302-4083-b2b1-aa8020eb003a"
+    "job_id": "a6ca202e-bf7a-41eb-b8db-d5d45b1166c9"
 }

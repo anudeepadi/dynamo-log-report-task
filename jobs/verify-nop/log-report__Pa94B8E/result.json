@@ -1,13 +1,13 @@
 {
-    "id": "d0eedcfa-bc07-4178-a3dd-5b33ac29fdc7",
+    "id": "06f101da-30ea-4b2c-aba3-ce7eedc1756c",
     "task_name": "dynamo/log-report",
-    "trial_name": "log-report__X8sAy3H",
-    "trial_uri": "file:///Users/vuc229/Documents/handshake/jobs/verify-oracle/log-report__X8sAy3H",
+    "trial_name": "log-report__Pa94B8E",
+    "trial_uri": "file:///Users/vuc229/Documents/handshake/jobs/verify-nop/log-report__Pa94B8E",
     "task_id": {
         "path": "log-report"
     },
     "source": null,
-    "task_checksum": "c5a903834557b6399d97767a9f936a4d0d7ecc42696a9b772b102303be1fdfa2",
+    "task_checksum": "0c53e976704f30071d90b57cdb8cef45f4691cfe6f37b1402583a8e37db4ba12",
     "config": {
         "task": {
             "path": "log-report",
@@ -19,8 +19,8 @@
             "download_dir": null,
             "source": null
         },
-        "trial_name": "log-report__X8sAy3H",
-        "trials_dir": "jobs/verify-oracle",
+        "trial_name": "log-report__Pa94B8E",
+        "trials_dir": "jobs/verify-nop",
         "install_only": false,
         "timeout_multiplier": 1.0,
         "agent_timeout_multiplier": null,
@@ -28,7 +28,7 @@
         "agent_setup_timeout_multiplier": null,
         "environment_build_timeout_multiplier": null,
         "agent": {
-            "name": "oracle",
+            "name": "nop",
             "import_path": null,
             "model_name": null,
             "n_concurrent": null,
@@ -67,10 +67,10 @@
         },
         "artifacts": [],
         "extra_instruction_paths": [],
-        "job_id": "3034a563-a7b2-41e8-9229-62954ce62e07"
+        "job_id": "a6ca202e-bf7a-41eb-b8db-d5d45b1166c9"
     },
     "agent_info": {
-        "name": "oracle",
+        "name": "nop",
         "version": "1.0.0",
         "model_info": null
     },
@@ -84,27 +84,27 @@
     },
     "verifier_result": {
         "rewards": {
-            "reward": 1.0
+            "reward": 0.0
         }
     },
     "exception_info": null,
-    "started_at": "2026-07-22T20:51:48.557880Z",
-    "finished_at": "2026-07-22T20:51:53.901280Z",
+    "started_at": "2026-07-22T21:03:12.855372Z",
+    "finished_at": "2026-07-22T21:03:18.614224Z",
     "environment_setup": {
-        "started_at": "2026-07-22T20:51:48.772760Z",
-        "finished_at": "2026-07-22T20:51:50.895010Z"
+        "started_at": "2026-07-22T21:03:13.183649Z",
+        "finished_at": "2026-07-22T21:03:15.476471Z"
     },
     "agent_setup": {
-        "started_at": "2026-07-22T20:51:50.895088Z",
-        "finished_at": "2026-07-22T20:51:50.895151Z"
+        "started_at": "2026-07-22T21:03:15.476570Z",
+        "finished_at": "2026-07-22T21:03:15.476649Z"
     },
     "agent_execution": {
-        "started_at": "2026-07-22T20:51:50.895243Z",
-        "finished_at": "2026-07-22T20:51:51.224173Z"
+        "started_at": "2026-07-22T21:03:15.476770Z",
+        "finished_at": "2026-07-22T21:03:15.476856Z"
     },
     "verifier": {
-        "started_at": "2026-07-22T20:51:51.773067Z",
-        "finished_at": "2026-07-22T20:51:52.154103Z"
+        "started_at": "2026-07-22T21:03:16.102817Z",
+        "finished_at": "2026-07-22T21:03:16.797799Z"
     },
     "step_results": null
 }
