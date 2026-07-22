@@ -1,5 +1,13 @@
-There is an Apache-style access log at /app/access.log. Parse it and write a summary
-report to /app/report.json as a single JSON object with exactly these keys:
+There is an Apache-style access log at /app/access.log. Every non-blank line is one
+HTTP request and looks like this:
+
+    192.168.0.1 - - [16/Jun/2026:10:00:01 +0000] "GET /index.html HTTP/1.1" 200 1024
+
+The first whitespace-separated field is the client IP address, and the quoted request
+section holds the HTTP method followed by the requested path.
+
+Parse the log and write a summary report to /app/report.json as a single JSON object
+with exactly these keys:
 
 - "total_requests": the total number of non-blank log lines.
 - "unique_ips": the number of distinct client IP addresses (the first field of each line).

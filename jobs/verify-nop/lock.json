@@ -1,6 +1,6 @@
 {
     "schema_version": 2,
-    "created_at": "2026-07-22T21:03:12.823996Z",
+    "created_at": "2026-07-22T21:10:39.399646Z",
     "harbor": {
         "version": "0.20.0",
         "is_editable": false
@@ -9,15 +9,15 @@
     "retry": {
         "max_retries": 0,
         "exclude_exceptions": [
-            "AgentTimeoutError",
-            "AgentAuthenticationError",
             "VerifierOutputParseError",
+            "AgentAuthenticationError",
             "VerifierTimeoutError",
-            "AgentSafetyRefusalError",
-            "RewardFileEmptyError",
-            "ModelNotFoundError",
+            "AgentTimeoutError",
             "RewardFileNotFoundError",
-            "ApiUsageLimitError"
+            "AgentSafetyRefusalError",
+            "ApiUsageLimitError",
+            "RewardFileEmptyError",
+            "ModelNotFoundError"
         ],
         "wait_multiplier": 1.0,
         "min_wait_sec": 1.0,
@@ -29,7 +29,7 @@
             "task": {
                 "name": "log-report",
                 "type": "local",
-                "digest": "sha256:7c5402480ebb81ef1206be1b2eeb55547e947d0d810882646b7b52e414a40b0f",
+                "digest": "sha256:ce8e583f4cf207613dad742be207cf10948a0bdfbe3379406070f886e69e5b92",
                 "path": "log-report"
             },
             "install_only": false,
