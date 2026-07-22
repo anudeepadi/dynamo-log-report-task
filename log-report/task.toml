@@ -12,9 +12,9 @@ artifact_type = ["text_or_log_file", "generated_output_artifact"]
 expert_time_estimate_hours = 0.3
 model_tested = "GPT-5.4"
 agent_tested = "Terminus-2"
-difficulty_explanation = "Parse a small access log and emit summary stats."
-solution_explanation = "Read the log, count requests/unique IPs, find the top path."
-verification_explanation = "Recompute total_requests, unique_ips, and top_path directly from the log and assert the report matches exactly."
+difficulty_explanation = "Straightforward text parsing with no tricky edge cases: six well-formed log lines, three aggregates, and a fully specified output schema. The only real work is extracting the request path from the quoted request field and counting correctly."
+solution_explanation = "Read /app/access.log line by line, skipping blank lines. Count non-blank lines for total_requests, collect the first whitespace-delimited field of each line into a set for unique_ips, and extract the path from the quoted request to find the most common one for top_path. Serialize the three values to /app/report.json."
+verification_explanation = "Four pytest tests, one per numbered success criterion. The first asserts /app/report.json parses as a JSON object whose key set is exactly {total_requests, unique_ips, top_path}; the other three compare each value against ground truth hardcoded from the log baked into the image (6, 3, /index.html). Values are hardcoded rather than recomputed at verify time so an agent cannot pass by rewriting /app/access.log to match an incorrect report."
 
 [verifier]
 timeout_sec = 120.0

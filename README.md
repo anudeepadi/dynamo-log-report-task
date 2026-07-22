@@ -21,7 +21,7 @@ Both runs are committed under `jobs/` with their `verifier/reward.txt` and
 | 1 | `task.toml`: `artifacts` was a string (`"/app/out.json"`) instead of an array, and named a file the task never produces | `artifacts = ["/app/report.json"]` |
 | 2 | `environment/Dockerfile` used the unpinned, non-approved `python:latest` | Pinned to `python:3.13-slim-bookworm@sha256:9d7f2875…` |
 | 3 | The agent image leaked the reference solution via `COPY solution_hint.py` | Deleted `environment/solution_hint.py` and the `COPY` line |
-| 4 | The verifier was gameable — it only asserted `report.json` exists and is non-empty | Rewrote `tests/test_outputs.py` to assert the actual values against hardcoded ground truth |
+| 4 | The verifier was gameable — it only asserted `report.json` exists and is non-empty | Rewrote `tests/test_outputs.py` to assert the actual values (`6`, `3`, `/index.html`) plus the exact key set. Ground truth is hardcoded rather than recomputed from `/app/access.log` at verify time, so an agent cannot pass by rewriting the input log to match a wrong report |
 | 5 | `tests/test.sh` wrote `reward.txt` to `/app/` and never produced `ctrf.json` | Writes both `reward.txt` and `ctrf.json` to `/logs/verifier/` |
 | 6 | `instruction.md` was vague prose — no output path, no schema, no success criteria | Rewrote with the absolute path, exact JSON schema, and 4 numbered criteria matching the verifier 1:1 |
 

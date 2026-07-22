@@ -1,13 +1,13 @@
 {
-    "id": "2ef7e4f4-9b95-4eb3-b0f4-69908457c20b",
+    "id": "8272a1f8-18f4-495b-90c3-2e8108d6f056",
     "task_name": "dynamo/log-report",
-    "trial_name": "log-report__2J8R9Y3",
-    "trial_uri": "file:///Users/vuc229/Documents/handshake/jobs/verify-nop/log-report__2J8R9Y3",
+    "trial_name": "log-report__GmAmtHt",
+    "trial_uri": "file:///Users/vuc229/Documents/handshake/jobs/verify-nop/log-report__GmAmtHt",
     "task_id": {
         "path": "log-report"
     },
     "source": null,
-    "task_checksum": "bc3499e228a44e0e8907f21a6eb45096cd9c73c6dd230561bde6b062d96bc5ac",
+    "task_checksum": "c5a903834557b6399d97767a9f936a4d0d7ecc42696a9b772b102303be1fdfa2",
     "config": {
         "task": {
             "path": "log-report",
@@ -19,7 +19,7 @@
             "download_dir": null,
             "source": null
         },
-        "trial_name": "log-report__2J8R9Y3",
+        "trial_name": "log-report__GmAmtHt",
         "trials_dir": "jobs/verify-nop",
         "install_only": false,
         "timeout_multiplier": 1.0,
@@ -67,7 +67,7 @@
         },
         "artifacts": [],
         "extra_instruction_paths": [],
-        "job_id": "035baef5-8b78-49b2-96ba-9543c9e21295"
+        "job_id": "f3893455-4302-4083-b2b1-aa8020eb003a"
     },
     "agent_info": {
         "name": "nop",
@@ -88,23 +88,23 @@
         }
     },
     "exception_info": null,
-    "started_at": "2026-07-22T20:48:08.431461Z",
-    "finished_at": "2026-07-22T20:48:13.984857Z",
+    "started_at": "2026-07-22T20:51:56.997374Z",
+    "finished_at": "2026-07-22T20:52:01.891365Z",
     "environment_setup": {
-        "started_at": "2026-07-22T20:48:08.493263Z",
-        "finished_at": "2026-07-22T20:48:10.936923Z"
+        "started_at": "2026-07-22T20:51:57.027826Z",
+        "finished_at": "2026-07-22T20:51:58.992916Z"
     },
     "agent_setup": {
-        "started_at": "2026-07-22T20:48:10.937010Z",
-        "finished_at": "2026-07-22T20:48:10.937076Z"
+        "started_at": "2026-07-22T20:51:58.993106Z",
+        "finished_at": "2026-07-22T20:51:58.993187Z"
     },
     "agent_execution": {
-        "started_at": "2026-07-22T20:48:10.937174Z",
-        "finished_at": "2026-07-22T20:48:10.937245Z"
+        "started_at": "2026-07-22T20:51:58.993328Z",
+        "finished_at": "2026-07-22T20:51:58.993545Z"
     },
     "verifier": {
-        "started_at": "2026-07-22T20:48:11.484720Z",
-        "finished_at": "2026-07-22T20:48:12.184302Z"
+        "started_at": "2026-07-22T20:51:59.585383Z",
+        "finished_at": "2026-07-22T20:52:00.020587Z"
     },
     "step_results": null
 }
