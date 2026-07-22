@@ -1,0 +1,13 @@
+{
+    "job_name": "verify-nop",
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "log-report"
+        }
+    ]
+}

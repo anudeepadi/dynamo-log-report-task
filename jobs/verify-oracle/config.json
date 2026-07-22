@@ -1,0 +1,8 @@
+{
+    "job_name": "verify-oracle",
+    "tasks": [
+        {
+            "path": "log-report"
+        }
+    ]
+}
