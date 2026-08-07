@@ -14,6 +14,30 @@ harbor run -p ./log-report --agent nop -y   # reward 0.0  (jobs/verify-nop)
 Both runs are committed under `jobs/` with their `verifier/reward.txt` and
 `verifier/ctrf.json`.
 
+### Local pre-flight (no Docker)
+
+`scripts/verify_local.sh` checks the same task without pulling an image, for
+environments where Docker Hub is unreachable:
+
+```
+scripts/verify_local.sh
+```
+
+It bind-mounts `/app`, `/logs`, `/solution` and `/tests` inside a private mount
+namespace, then runs the task's own `solve.sh` and `test.sh` unmodified. It
+covers the four-way path consistency, the oracle run scoring 1, the nop run
+scoring 0, `reward.txt` and `ctrf.json` landing in `/logs/verifier/`, and the
+verifier still scoring 0 when the input log is rewritten to match a wrong
+report. It does not cover `task.toml` parsing, the image build, or artifact
+collection, so it supplements `harbor run` rather than replacing it.
+
+Needs Linux with unprivileged user namespaces, plus pytest and
+pytest-json-ctrf in the same environment:
+
+```
+uv tool install pytest==8.4.1 --with pytest-json-ctrf==0.3.5
+```
+
 ## Defects found and fixed
 
 | # | Defect | Fix |
